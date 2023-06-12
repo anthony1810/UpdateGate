@@ -13,20 +13,42 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text(viewModel.updateType.capitalized)
-                .font(.title)
-                .foregroundColor(.primary)
-            Text(viewModel.title)
-                .font(.title2)
-                .foregroundColor(.secondary)
-            Text(viewModel.message)
-                .font(.callout)
-                .foregroundColor(.secondary)
-                .multilineTextAlignment(.center)
+            Group {
+                Text(viewModel.updateType.capitalized)
+                    .font(.title)
+                    .foregroundColor(.primary)
+                Text(viewModel.title)
+                    .font(.title2)
+                    .foregroundColor(.secondary)
+                Text(viewModel.message)
+                    .font(.callout)
+                    .foregroundColor(.secondary)
+                    .multilineTextAlignment(.center)
+            }
+            .opacity(viewModel.isLoading ? 0.0 : 1.0)
+            
+            HStack {
+                Button(action: {
+                    viewModel.checkLocalUpdateGateStatus()
+                }, label: {
+                    Text("Check Local")
+                })
+                
+                Button(action: {
+                    viewModel.checkRemoteUpdateGateStatus()
+                }, label: {
+                    Text("Check Remote")
+                })
+            }
+            .padding(.vertical)
         }
         .padding()
+        .overlay(
+            ProgressView()
+                .opacity(viewModel.isLoading ? 1.0 : 0.0)
+        )
         .onAppear {
-            viewModel.checkUpdateGateStatus()
+            viewModel.checkLocalUpdateGateStatus()
         }
     }
 }

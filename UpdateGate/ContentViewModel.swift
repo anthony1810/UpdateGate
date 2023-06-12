@@ -31,19 +31,35 @@ class ContentViewModel: ObservableObject {
     @Published var title: AttributedString = ""
     @Published var message: AttributedString = ""
     @Published var updateType: String = ""
+
+    @Published var isLoading = false
     
     var cancellables = Set<AnyCancellable>()
     
-    func checkUpdateGateStatus() {
+    func checkLocalUpdateGateStatus() {
         guard let url = Bundle.main.url(forResource: "updates", withExtension: "json")
         else { return }
-            UpdateGate.readUpdateGateConfigurations(mode: .local(fileURL: url))
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { completion in
-                debugPrint(completion)
-            }, receiveValue: { [weak self] result in
-                self?.updateStatus = result
-            })
-            .store(in: &cancellables)
+        let localReadMode = UpdateGateReadMode.local(fileURL: url)
+        callUpdateGate(mode: localReadMode)
+    }
+    
+    func checkRemoteUpdateGateStatus() {
+        guard let url = URL(string: "https://develop.api.dev.rkme.io/v1/playVersion.json")
+        else { return }
+        let localReadMode = UpdateGateReadMode.remote(apiURL: url)
+        callUpdateGate(mode: localReadMode)
+    }
+    
+    private func callUpdateGate(mode: UpdateGateReadMode) {
+        isLoading = true
+        UpdateGate.readUpdateGateConfigurations(mode: mode)
+        .receive(on: DispatchQueue.main)
+        .sink(receiveCompletion: { [weak self] completion in
+            debugPrint(completion)
+            self?.isLoading = false
+        }, receiveValue: { [weak self] result in
+            self?.updateStatus = result
+        })
+        .store(in: &cancellables)
     }
 }
