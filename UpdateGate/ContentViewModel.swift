@@ -20,7 +20,7 @@ class ContentViewModel: ObservableObject {
                     self.message = Helpers.markdown(from: message)
                 }
                 if case let .none(reason) = updateStatus {
-                    self.updateType = Helpers.markdown(from: "Nothing to update")
+                    self.updateType = "Nothing to update"
                     self.title = Helpers.markdown(from: "You can go inside the app")
                     self.message = Helpers.markdown(from: reason)
                 }
