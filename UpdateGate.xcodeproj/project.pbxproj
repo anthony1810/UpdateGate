@@ -28,6 +28,8 @@
 		2FC3F8412A35CA55001606DE /* UpdateNotificationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8402A35CA55001606DE /* UpdateNotificationMode.swift */; };
 		2FC3F8432A35CA74001606DE /* UpdateConfigurationShowCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8422A35CA74001606DE /* UpdateConfigurationShowCounter.swift */; };
 		2FC3F8452A35CC0F001606DE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8442A35CC0F001606DE /* Helpers.swift */; };
+		2FC3F8472A370A84001606DE /* updates.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FC3F8462A370A84001606DE /* updates.json */; };
+		2FC3F8492A370B30001606DE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8482A370B30001606DE /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		2FC3F8402A35CA55001606DE /* UpdateNotificationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNotificationMode.swift; sourceTree = "<group>"; };
 		2FC3F8422A35CA74001606DE /* UpdateConfigurationShowCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateConfigurationShowCounter.swift; sourceTree = "<group>"; };
 		2FC3F8442A35CC0F001606DE /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		2FC3F8462A370A84001606DE /* updates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updates.json; sourceTree = "<group>"; };
+		2FC3F8482A370B30001606DE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 			children = (
 				2FC3F7F62A357867001606DE /* UpdateGateApp.swift */,
 				2FC3F7F82A357867001606DE /* ContentView.swift */,
+				2FC3F8482A370B30001606DE /* ContentViewModel.swift */,
 				2FC3F8202A3580BC001606DE /* UpdateGate */,
 				2FC3F7FA2A357868001606DE /* Assets.xcassets */,
 				2FC3F7FC2A357868001606DE /* Preview Content */,
@@ -134,6 +139,7 @@
 		2FC3F7FC2A357868001606DE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				2FC3F8462A370A84001606DE /* updates.json */,
 				2FC3F7FD2A357868001606DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -338,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FC3F7FE2A357868001606DE /* Preview Assets.xcassets in Resources */,
+				2FC3F8472A370A84001606DE /* updates.json in Resources */,
 				2FC3F7FB2A357868001606DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +373,7 @@
 				2FC3F8282A3580BC001606DE /* UpdateGate.swift in Sources */,
 				2FC3F8332A358E29001606DE /* ReadMode.swift in Sources */,
 				2FC3F83D2A358F9F001606DE /* ResultFetcherProtocol.swift in Sources */,
+				2FC3F8492A370B30001606DE /* ContentViewModel.swift in Sources */,
 				2FC3F8412A35CA55001606DE /* UpdateNotificationMode.swift in Sources */,
 				2FC3F7F92A357867001606DE /* ContentView.swift in Sources */,
 				2FC3F8372A358EBC001606DE /* ConfigurationFetcherProtocol.swift in Sources */,

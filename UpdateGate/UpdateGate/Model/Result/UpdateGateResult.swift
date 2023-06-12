@@ -1,6 +1,6 @@
 import Foundation
 
-public enum UpdateGateResultType {
+public enum UpdateGateResultType: String {
     case maintenance
     case mandatory
     case recommended
