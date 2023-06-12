@@ -14,6 +14,20 @@
 		2FC3F8082A357868001606DE /* UpdateGateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8072A357868001606DE /* UpdateGateTests.swift */; };
 		2FC3F8122A357868001606DE /* UpdateGateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8112A357868001606DE /* UpdateGateUITests.swift */; };
 		2FC3F8142A357868001606DE /* UpdateGateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8132A357868001606DE /* UpdateGateUITestsLaunchTests.swift */; };
+		2FC3F8282A3580BC001606DE /* UpdateGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8212A3580BC001606DE /* UpdateGate.swift */; };
+		2FC3F8292A3580BC001606DE /* UpdateGateResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8242A3580BC001606DE /* UpdateGateResult.swift */; };
+		2FC3F82B2A3580BC001606DE /* UpdateConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8262A3580BC001606DE /* UpdateConfigurationProtocol.swift */; };
+		2FC3F82C2A3580BC001606DE /* UpdateGateConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8272A3580BC001606DE /* UpdateGateConfiguration.swift */; };
+		2FC3F8332A358E29001606DE /* ReadMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8322A358E29001606DE /* ReadMode.swift */; };
+		2FC3F8352A358E35001606DE /* UpdateGateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8342A358E35001606DE /* UpdateGateError.swift */; };
+		2FC3F8372A358EBC001606DE /* ConfigurationFetcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8362A358EBC001606DE /* ConfigurationFetcherProtocol.swift */; };
+		2FC3F8392A358F3A001606DE /* LocalConfigurationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8382A358F3A001606DE /* LocalConfigurationFetcher.swift */; };
+		2FC3F83B2A358F44001606DE /* RemoteConfigurationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F83A2A358F44001606DE /* RemoteConfigurationFetcher.swift */; };
+		2FC3F83D2A358F9F001606DE /* ResultFetcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F83C2A358F9F001606DE /* ResultFetcherProtocol.swift */; };
+		2FC3F83F2A35904C001606DE /* ResultFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F83E2A35904C001606DE /* ResultFetcher.swift */; };
+		2FC3F8412A35CA55001606DE /* UpdateNotificationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8402A35CA55001606DE /* UpdateNotificationMode.swift */; };
+		2FC3F8432A35CA74001606DE /* UpdateConfigurationShowCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8422A35CA74001606DE /* UpdateConfigurationShowCounter.swift */; };
+		2FC3F8452A35CC0F001606DE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3F8442A35CC0F001606DE /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +58,20 @@
 		2FC3F80D2A357868001606DE /* UpdateGateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpdateGateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC3F8112A357868001606DE /* UpdateGateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateGateUITests.swift; sourceTree = "<group>"; };
 		2FC3F8132A357868001606DE /* UpdateGateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateGateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2FC3F8212A3580BC001606DE /* UpdateGate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateGate.swift; sourceTree = "<group>"; };
+		2FC3F8242A3580BC001606DE /* UpdateGateResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateGateResult.swift; sourceTree = "<group>"; };
+		2FC3F8262A3580BC001606DE /* UpdateConfigurationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateConfigurationProtocol.swift; sourceTree = "<group>"; };
+		2FC3F8272A3580BC001606DE /* UpdateGateConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateGateConfiguration.swift; sourceTree = "<group>"; };
+		2FC3F8322A358E29001606DE /* ReadMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMode.swift; sourceTree = "<group>"; };
+		2FC3F8342A358E35001606DE /* UpdateGateError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateGateError.swift; sourceTree = "<group>"; };
+		2FC3F8362A358EBC001606DE /* ConfigurationFetcherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationFetcherProtocol.swift; sourceTree = "<group>"; };
+		2FC3F8382A358F3A001606DE /* LocalConfigurationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalConfigurationFetcher.swift; sourceTree = "<group>"; };
+		2FC3F83A2A358F44001606DE /* RemoteConfigurationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigurationFetcher.swift; sourceTree = "<group>"; };
+		2FC3F83C2A358F9F001606DE /* ResultFetcherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultFetcherProtocol.swift; sourceTree = "<group>"; };
+		2FC3F83E2A35904C001606DE /* ResultFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultFetcher.swift; sourceTree = "<group>"; };
+		2FC3F8402A35CA55001606DE /* UpdateNotificationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNotificationMode.swift; sourceTree = "<group>"; };
+		2FC3F8422A35CA74001606DE /* UpdateConfigurationShowCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateConfigurationShowCounter.swift; sourceTree = "<group>"; };
+		2FC3F8442A35CC0F001606DE /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +124,7 @@
 			children = (
 				2FC3F7F62A357867001606DE /* UpdateGateApp.swift */,
 				2FC3F7F82A357867001606DE /* ContentView.swift */,
+				2FC3F8202A3580BC001606DE /* UpdateGate */,
 				2FC3F7FA2A357868001606DE /* Assets.xcassets */,
 				2FC3F7FC2A357868001606DE /* Preview Content */,
 			);
@@ -125,6 +154,83 @@
 				2FC3F8132A357868001606DE /* UpdateGateUITestsLaunchTests.swift */,
 			);
 			path = UpdateGateUITests;
+			sourceTree = "<group>";
+		};
+		2FC3F8202A3580BC001606DE /* UpdateGate */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3F8222A3580BC001606DE /* Core */,
+				2FC3F8232A3580BC001606DE /* Model */,
+				2FC3F8312A358E08001606DE /* Common */,
+			);
+			path = UpdateGate;
+			sourceTree = "<group>";
+		};
+		2FC3F8222A3580BC001606DE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3F8212A3580BC001606DE /* UpdateGate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2FC3F8232A3580BC001606DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3F82D2A358D8C001606DE /* Configurations */,
+				2FC3F82F2A358DBD001606DE /* ConfigurationFetcher */,
+				2FC3F82E2A358D9D001606DE /* Result */,
+				2FC3F8302A358DCD001606DE /* ResultFetcher */,
+				2FC3F8402A35CA55001606DE /* UpdateNotificationMode.swift */,
+				2FC3F8422A35CA74001606DE /* UpdateConfigurationShowCounter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FC3F82D2A358D8C001606DE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3F8262A3580BC001606DE /* UpdateConfigurationProtocol.swift */,
+				2FC3F8272A3580BC001606DE /* UpdateGateConfiguration.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		2FC3F82E2A358D9D001606DE /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3F8242A3580BC001606DE /* UpdateGateResult.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		2FC3F82F2A358DBD001606DE /* ConfigurationFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3F8362A358EBC001606DE /* ConfigurationFetcherProtocol.swift */,
+				2FC3F8382A358F3A001606DE /* LocalConfigurationFetcher.swift */,
+				2FC3F83A2A358F44001606DE /* RemoteConfigurationFetcher.swift */,
+			);
+			path = ConfigurationFetcher;
+			sourceTree = "<group>";
+		};
+		2FC3F8302A358DCD001606DE /* ResultFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3F83C2A358F9F001606DE /* ResultFetcherProtocol.swift */,
+				2FC3F83E2A35904C001606DE /* ResultFetcher.swift */,
+			);
+			path = ResultFetcher;
+			sourceTree = "<group>";
+		};
+		2FC3F8312A358E08001606DE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3F8322A358E29001606DE /* ReadMode.swift */,
+				2FC3F8342A358E35001606DE /* UpdateGateError.swift */,
+				2FC3F8442A35CC0F001606DE /* Helpers.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +363,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC3F8282A3580BC001606DE /* UpdateGate.swift in Sources */,
+				2FC3F8332A358E29001606DE /* ReadMode.swift in Sources */,
+				2FC3F83D2A358F9F001606DE /* ResultFetcherProtocol.swift in Sources */,
+				2FC3F8412A35CA55001606DE /* UpdateNotificationMode.swift in Sources */,
 				2FC3F7F92A357867001606DE /* ContentView.swift in Sources */,
+				2FC3F8372A358EBC001606DE /* ConfigurationFetcherProtocol.swift in Sources */,
+				2FC3F83F2A35904C001606DE /* ResultFetcher.swift in Sources */,
+				2FC3F8392A358F3A001606DE /* LocalConfigurationFetcher.swift in Sources */,
+				2FC3F8292A3580BC001606DE /* UpdateGateResult.swift in Sources */,
+				2FC3F8452A35CC0F001606DE /* Helpers.swift in Sources */,
+				2FC3F82C2A3580BC001606DE /* UpdateGateConfiguration.swift in Sources */,
+				2FC3F8432A35CA74001606DE /* UpdateConfigurationShowCounter.swift in Sources */,
+				2FC3F83B2A358F44001606DE /* RemoteConfigurationFetcher.swift in Sources */,
 				2FC3F7F72A357867001606DE /* UpdateGateApp.swift in Sources */,
+				2FC3F8352A358E35001606DE /* UpdateGateError.swift in Sources */,
+				2FC3F82B2A3580BC001606DE /* UpdateConfigurationProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
