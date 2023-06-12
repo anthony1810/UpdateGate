@@ -14,10 +14,15 @@ class ContentViewModel: ObservableObject {
         didSet {
             isUpdateAvailable = updateStatus != nil
             if let updateStatus = updateStatus {
-                if case .available(let type, let title, let message) = updateStatus {
+                if case let .available(type, title, message) = updateStatus {
                     self.updateType = type.rawValue
                     self.title = Helpers.markdown(from: title)
                     self.message = Helpers.markdown(from: message)
+                }
+                if case let .none(reason) = updateStatus {
+                    self.updateType = Helpers.markdown(from: "Nothing to update")
+                    self.title = Helpers.markdown(from: "You can go inside the app")
+                    self.message = Helpers.markdown(from: reason)
                 }
             }
         }
